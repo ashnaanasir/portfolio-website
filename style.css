@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+/* 
+html {
+    font-size: 62.5%;
+    ffeda5
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    background-color: #47297b;
+}
+
+.heading{
+    margin-top: 20vh;
+    color: #FFD93D
+}
+
+h1{
+    font-size: 8vw;
+    margin: 3%;
+    padding: 0;
+}
+
+p.text {
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 15vw;
+    }
+    p.text{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+/* Connect Section */
+div.contact-info{
+    /* position: fixed;
+    bottom: 0; */
+    padding: 15px 20px;
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.linked-in{
+    fill: #FFD93D;
+}
+
+img {
+    width: 50px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    min-height: 20px;
+    background-color: #FFD93D;
+    position: fixed;
+    bottom: 0;
+}
