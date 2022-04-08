@@ -1,72 +1,226 @@
+/* 
+    #FFD93D - yellow shade
+    #47297b - purple shade.
+
+*/
 *{
     box-sizing: border-box;
 }
-/* 
-html {
-    font-size: 62.5%;
-    ffeda5
-} */
 
 body{
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
     text-align: center;
-    background-color: #47297b;
+    /* background-color: #47297b; */
 }
 
-.heading{
-    margin-top: 20vh;
-    color: #FFD93D
-}
-
-h1{
-    font-size: 8vw;
-    margin: 3%;
-    padding: 0;
-}
-
-p.text {
-    font-size: 2vw;
-    margin: 0;
-    padding: 0;
-}
-
-@media only screen and (max-width: 600px) {
-    h1{
-        font-size: 15vw;
-    }
-    p.text{
-        padding: 10px;
-        font-size: 15px;
-    }
-}
-
-/* Connect Section */
-div.contact-info{
-    /* position: fixed;
-    bottom: 0; */
-    padding: 15px 20px;
-    margin-top: 5rem;
+/* Nav Styling  */
+div#nav {
     width: 100%;
+    position: fixed;
+    top:0;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    background-color: #FFD93D;
+    color: #47287b;
+    text-align: right;
+}
+
+p#nav-links a {
+    text-decoration: none;
+    color: #47287b;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 378px) {
+    div#nav{
+        padding-top: 20px;
+        padding-right: 0;
+        text-align: center;
+    }
+    p#nav-links a {
+        font-size: 0.75rem;
+        letter-spacing: normal;
+    }   
+}
+
+/* About section styling */
+section#about {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8.5vh;
+    text-align: center;
+    color: #47287b;
+    font-weight: 700;
+}
+
+h2 span {
+    display: block;
+}
+
+span#name {
+    margin-top: -2vh;
+    color:#FFD93D;
+    font-size: 5rem;
+    
+}
+
+@media only screen and (max-width: 378px) {
+    h2 {
+        margin-bottom: -1vh;
+    }
+    span#name {
+        margin-top: 0;
+        font-size: 2rem;
+    
+    }
+
+}
+
+span#pronunciation {
+    font-size: 1rem;
+}
+
+div#about-text {
+    padding: 4vw;
+    max-width: 80%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
     align-items: center;
 }
 
-div.linked-in{
-    fill: #FFD93D;
+div#socials {
+    display: flex;
+}
+
+div#skill-set {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 890px) {
+    div#skill-set {
+        display: flex;
+        flex-wrap: wrap;
+    }   
+}
+
+.skill-div {
+    margin: 0px 1rem; 
+}
+
+/* Projects section styling */
+
+section#projects {
+    width: 100%;
+}
+
+section#projects h2 {
+    color:#47287b
+}
+
+div.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    overflow: hidden;
+}   
+
+div.project-img {
+    width: 40%;
+}
+
+img.project-icon {
+    min-width: 30vw;
+    height: auto;
+    padding-top: 5vw;
+}
+
+div.project-desc {
+width: 40%;
+}
+
+div.project-desc h4 {
+    color: #FFD93D;
+    background-color: #47287b;
+}
+
+div.project-desc a {
+    text-decoration: none;
+    text-transform: ;
+    color: #47287b;
 }
 
 img {
     width: 50px;
 }
 
+
+@media only screen and (max-width: 700px) {
+    div.project-card {
+        flex-direction: column;
+    }
+    div.project-img {
+        width: 90%;
+    }
+    div.project-desc {
+        width: 90%;
+    }
+}
+
+/* contact form styling */
+
+section#contact h2 {
+    color: #47287b;
+}
+
+div#contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    min-width: 100%;
+}
+
+input, textarea {
+    display: block;
+    width: 90%;
+    margin: 5vw;
+    padding: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+    border: 3px solid #eee;
+}
+
+button#contact-submit {
+    border: 0;
+    background-color: #47287b;
+    color: #FFD93D;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    min-width: 240px;
+    border-radius: 0%;
+}
+
 /* footer */
 footer {
+    margin-top: 1.5rem;
     width: 100%;
     min-height: 20px;
     background-color: #FFD93D;
-    position: fixed;
-    bottom: 0;
-}
+    /* position: fixed;
+    bottom: 0; */
+} 

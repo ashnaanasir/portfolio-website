@@ -6,43 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Ayesha Nasir - Web Developer</title>
 </head>
 <body>
-    <div id="main">
-
-        <div class="heading" id="heading-section">
-            <h1 class="heading">coming soon...</h1>
-            <p class="text">Portfolio is currently under construction. Find me on here till then:</p>
-            <p></p>
-        </div>
-        
-        <div class="contact-info" id="contact-section">
-            <div class="linked-in">
-                <a href="https://www.linkedin.com/in/ayeshannasir/" target="_blank">
-                    <img src="/icons/linkedin-square.png" alt="Connect on Linkedin!" title="Connect on Linkedin!" id="linkedin">
-                </a>
-            </div>
-            <div class="github">
-                <a href="https://github.com/ayeshanasir" target="_blank">
-                <img src="/icons/github.png" alt="View my github!" title="Visit my github!" id="github">
-                </a>
-            </div>
-            <div class="email">
-                <a href="#">
-                    <img src="/icons/email.png" alt="Send me an email!" title="Send me an email!">
-                </a>
-            </div>
-            <!-- <div class="download-resume">
-                <img src="/icons/download.svg" alt="Download Resume">
-            </div> -->
-        </div>
-
+    <!-- nav bar -->
+    <div id="nav">
+        <p id="nav-links">
+            <span id="about"><a href="#about">About</a></span> / 
+            <span id="portfolio"><a href="#projects">Projects</a></span> /
+            <span id="contact"><a href="#contact">Contact</a></span>
+        </p>
     </div>
+    <!-- about me -->
+    <section id="about">
+        <div id="about-heading">
+            <h2 id="introduction">
+                Hi, I am <span id="name">Ayesha!</span>
+                <span id="pronunciation">(pronounced 'ai-shah')</span>
+            </h2>
+        </div>
+        <div id="about-text">
+            <p>
+                A software developer based in Toronto, Canada. I am currently doing a part-time computer science
+                degree at University of Toronto while learning and building projects everyday! I love writing clean,
+                maintainable, easy-to-read code and strive to learn something new everyday. I am a quick learner able
+                to adapt to different situations with ease and my main priority at this point is to build valuable
+                experience and work with great teams on exciting projects! (But I love the not-so-exciting parts too)
+                <br>
+                Feel free to reach out!
+            </p>
+            <div id="socials">
+                <p>Find me on: </p>
+                <div id="github-link">
+                    <a href="https://github.com/ayeshanasir">
+                        <img src="/icons/github.png" alt="github link">
+                    </a>
+                </div>
+                <div id="linkedin-link">
+                    <a href="https://www.linkedin.com/in/ayeshannasir/">
+                        <img src="/icons/linkedin-square.png" alt="linkedin link">
+                    </a>
+                </div>
+            </div>
+            <p>My Skills:</p>
+            <div id="skill-set">
+                <div class="skill-div">
+                    <img src="/icons/html5.png" alt="HTML5">
+                </div>
+                <div class="skill-div">
+                    <img src="/icons/CSS.png" alt="CSS3">
+                </div>
+                <div class="skill-div">
+                    <img src="/icons/Sass.png" alt="SASS">
+                </div>
+                <div class="skill-div">
+                    <img src="/icons/git.png" alt="GIT">
+                </div>
+                <div class="skill-div">
+                    <img src="/icons/JS.png" alt=Javascript">
+                </div>
+                <div class="skill-div">
+                    <img src="/icons/React.png" alt="React JS">
+                </div>
+                <div class="skill-div">
+                    <img src="/icons/nodeJS.png" alt="Node JS">
+                </div>
+                <div class="skill-div">
+                    <img src="/icons/mongoDB.png" alt="MongoDB">
+                </div>
+                <div class="skill-div">
+                    <img src="/icons/Python.png" alt="Python">
+                </div>
+            </div>
+       </div>
+    </section >
 
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects:</h2>
+        <div id="project-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/icons/stylishly-img.png" alt="Stylishly Website" class="project-icon">
+                </div>
+                <div class="project-desc">
+                    <h4>Stylishly - A Responsive Website</h4>
+                    <p>
+                        A fully responsive website designed and coded from scratch to showcase front-end skills. 
+                        Tech stack used: HTML5, CSS Grid and Flexbox, Sass, Javascript, Slick.js (Javascript library)
+                        Deployed using netlify. <a href="https://gracious-albattani-60a765.netlify.com/">Live Link</a> |
+                        <a href="https://github.com/ayeshanasir/Stylishly">Github</a>
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/icons/python-invoice-generator-img.png" alt="Python Invoice Generator" class="project-icon">
+                </div>
+                <div class="project-desc">
+                    <h4>Python Invoice Generator</h4>
+                    <p>
+                        Python application developed for the final project for first year CS course at University of Toronto. 
+                        Used tkinter to create a GUI, and reportlab to generate a PDF invoice with the given information. 
+                        Uses tree data structure to generate autocomplete functionality and filtering functions.
+                        <a href="https://github.com/ayeshanasir/Python-Invoice-Generator">Github</a>
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/icons/notes-for-toronto-img.png" alt="Notes for Toronto Website" class="project-icon">
+                </div>
+                <div class="project-desc">
+                    <h4>Notes for Toronto - JS + API </h4>
+                    <p>
+                        A non-responsive website made to practice Javascript and make XMLHTTP API request. 
+                        No backend integrated. Tech Stack: HTML5, CSS Grid + Flexbox, Javascript, APIs. 
+                        <a href="https://pedantic-lewin-4fb53c.netlify.com/">Live Link</a> |
+                        <a href="https://github.com/ayeshanasir/notes-for-toronto">Github</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form -->
+    <!-- ADD THIS LATER -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div id="contact-form">
+            <form action="https://formspree.io/f/mqknyzlo" method="POST" >
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="message" placeholder="Type a message..."></textarea>
+                <!-- your other form fields go here -->
+                <button type="submit" id="contact-submit">Send</button>
+            </form>
+        </div>
+    </section>
     <footer>
-
     </footer>
 </body>
 </html>
