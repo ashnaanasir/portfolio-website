@@ -52,7 +52,7 @@ section#about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8.5vh;
+    margin-top: 9vh;
     text-align: center;
     color: #47287b;
     font-weight: 700;
@@ -86,7 +86,8 @@ span#pronunciation {
 }
 
 div#about-text {
-    padding: 4vw;
+    margin-top: -2rem;
+    padding: 4vh;
     max-width: 80%;
     display: flex;
     overflow: hidden;
@@ -154,7 +155,7 @@ div.project-desc h4 {
 
 div.project-desc a {
     text-decoration: none;
-    text-transform: ;
+    text-transform: capitalize;
     color: #47287b;
 }
 
